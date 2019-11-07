@@ -1,9 +1,11 @@
 import { Container, Service } from 'typedi';
 
+
+// @Service(QuestionService.name)
 @Service('QuestionService')
 export class QuestionService {
 
-  // async getAllUsers(): Promise<User[]> {
+  // async getAllUsers(): Promise<Question[]> {
   async getAllQuestions(n: Number) {
     // await new Promise((resolve) => setTimeout(resolve, 500))
     return [

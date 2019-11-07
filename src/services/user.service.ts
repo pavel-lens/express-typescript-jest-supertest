@@ -13,7 +13,7 @@ export class UserService {
     const questionService: QuestionService = Container.get('QuestionService')
     // const questionService = Container.get<QuestionService>('QuestionService')
 
-    // Types safety without neccessity to import { QuestionService } from './question.service'
+    // Types safety without neccessity to import QuestionService from './question.service'
     const questions = await questionService.getAllQuestions(12)
     const users = [
       {
