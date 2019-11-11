@@ -1,7 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express'
 // import UserService from '../services/user.service'
 import { Container } from 'typedi';
-import UserService from '../services/user.service'
+import { UserService } from '../services/user.service'
 
 
 const router = express.Router()

@@ -27,9 +27,5 @@ app.get('/', (req: Request, res: Response, next: NextFunction ) => {
     res.send('TS App is Running')
 })
 
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT,() => {
-    console.log(`server is running on PORT ${PORT}`)
-})
+export default app
+module.exports = app

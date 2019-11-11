@@ -7,7 +7,7 @@ export class UserService {
 
   // async getAllUsers(): Promise<User[]> {
   async getAllUsers() {
-    await new Promise((resolve) => setTimeout(resolve, 500))
+    // await new Promise((resolve) => setTimeout(resolve, 500))
 
     // Two ways of getting types right
     const questionService: QuestionService = Container.get('QuestionService')
@@ -21,7 +21,8 @@ export class UserService {
         questions,
       },
       {
-        name: 'Thomas Geiser',
+        name: 'Thomas Fantomas',
+        questions: [],
       },
     ]
 
